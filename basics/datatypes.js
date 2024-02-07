@@ -8,5 +8,9 @@ const age = null
 // symbol
 // object
 
-console.log(typeof "kabi");
+console.log(typeof "kabi"); //=> string
+
+console.log(typeof undefined); //=> undefined
+
+console.log(typeof null); //=> object
 
