@@ -20,6 +20,31 @@
     }
     addLanguageName("Python");
     addLanguageName("Java");
+
+    //Optimize way 
+    function optimizeWay(langName){
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    optimizeWay("JavaScript")
+    optimizeWay("Golang")
+
+    // Edit values
+    const secondLangauge = document.querySelector("li:nth-child(2)")
+    // secondLangauge.innerHTML = "Mojo"
+    const newLi = document.createElement("li")
+    newLi.textContent = "Mojo"
+    secondLangauge.replaceWith(newLi)
+
+    // Edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li> Typescript </li>'
+
+    // Remove
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+
     
 </script>
 </html>
